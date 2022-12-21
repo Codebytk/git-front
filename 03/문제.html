@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입 양식</title>
+</head>
+<body>
+    <center>
+    <table >
+        <tr>
+            <td align = "left" colspan="2"><font color="red">*</font>표시 항목은 필수 입력 항목입니다.
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="gray" width="100">아이디</td>
+            <td><font color = "red">*</font>
+                <input type="text" name="id" placeholder="아이디를 입력해주새요" size="10" maxlength="12" minlength="4">
+                <input type="button" value="아이디 중복 확인"><br>
+                <small> &nbsp;&nbsp;아이디는 영문 숫자조합으로 하셔야 합니다.(4자리 이상,12자리 이하)<br>
+                &nbsp;&nbsp;아이디는 <font color = "red">소문자</font>로 저장됩니다</small>
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="gray">암호</td>
+    
+            <td><font color = "red">*</font>
+                <input type="password" name = "password" placeholder="암호를 입력해 주세요"size="10" maxlength="12" minlength="4"><br>
+                <small>비밀번호는 4자리 이상 12 자리 이하로 입력해주세요</small>
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="gray">암호 확인</td>
+            <td><font color = "red">*</font>
+                <input type="password" name = "password" placeholder="암호를 다시 입력해 주세요"size="10"></td>
+        </tr>
+        <tr>
+            <td bgcolor="gray">이름</td>
+            <td><font color = "red">*</font>
+                <input type="name" name = "name"placeholder="이름을 입력해 주세요"size="10">
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="gray">대화명</td>
+            <td> &nbsp; <input type="text" name="talk" placeholder="대화명을 입력해 주세요"size="10">
+                <input type="button" value="중복 검사">
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="gray">주민등록번호</td>
+            <td><font color = "red">*</font>
+            <input type="tel" name="front" placeholder = "앞자리" size="5"maxlength="6">
+            -
+            <input type="tel" name="back" placeholder ="뒷자리" size="6" maxlength="7">
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="gray">생년월일</td>
+            <td><font color = "red">*</font>
+            <input type="tel" placeholder="년도" size="5" maxlength="4">
+            년
+            <input type="tel" placeholder="월" size="4" maxlength="2">
+            월
+            <input type="tel" placeholder="일" size="4" maxlength="2">
+            일
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="gray">성별</td>
+            <td><font color = "red">*</font>
+            <input type="radio" name="sex" value="man">남자
+            <input type="radio" name="sex" value="woman">여자
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="gray">E-mail</td>
+            <td><font color = "red">*</font>
+            <input type="email" name="e-mail" placeholder="이메일"size="30">
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="gray">메일수신</td>
+            <td><font color = "red">*</font>
+            <input type="radio" name="agree" value="동의">수신동의
+            <input type="radio" name="disagree" value="비동의">수신거부
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="gray">우편번호</td>
+            <td><font color = "red">*</font>
+            <input type="text" placeholder="도로이름" size="5" maxlength="4">&nbsp;
+            <input type="text" placeholder="번지수" size="5" maxlength="5">
+            <input type="button" value="검색">
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="gray">주소</td>
+            <td><font color = "red">*</font>
+            <input type="text" name = "address1"placeholder="주소1"><br>
+            &nbsp; <input type="text" name = "address2"placeholder="주소2" size="8">
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="gray">전화번호</td>
+            <td><font color = "red">*</font>
+            <select name="addnum">
+            <option value="02">02</option>
+            <option value="031">031</option>
+            <option value="032">032</option>
+            <option value="071">070</option>
+            </select>-<input type="tel" placeholder="앞자리" size="4" maxlength="4">-<input type="tel"placeholder="뒷자리" size="4" maxlength="4">
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="gray">핸드폰</td>
+            <td><font color = "red">*</font>
+            <select name="phonum">
+            <option value="010">010</option>
+            <option value="011">011</option>
+            <option value="012">012</option>
+            <option value="013">013</option>
+            </select>-<input type="tel"placeholder="앞자리" size="4" maxlength="4">-<input type="tel" placeholder="뒷자리" size="4" maxlength="4"></td>
+        </tr>
+        <tr>
+            <td bgcolor="gray">직업</td>
+            <td>&nbsp;
+            <select name="job">
+            <option value="기술직">기술직</option>
+            <option value="사무직">사무직</option>
+            <option value="공무원">공무원</option>
+            <option value="의료직">의료직</option>
+            </select></td>
+        </tr>
+        <tr>
+            <td bgcolor="gray">취미</td>
+            <td><font color = "red">*</font>
+            스포츠<input type="checkbox" value="스포츠">&nbsp;
+            쇼핑<input type="checkbox" value="쇼핑">&nbsp;
+            여행<input type="checkbox" value="여행">&nbsp;
+            독서<input type="checkbox" value="독서">&nbsp;
+            영화감상<input type="checkbox" value="영화감상">&nbsp;
+            음악감상<input type="checkbox" value="음악감상">&nbsp;
+            인터넷<input type="checkbox" value="인터넷">
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="gray">자기소개</td>
+            <td><textarea name = "profile" rows="10" cols="100">
+            </textarea></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td align="center">
+            <input type="submit" value="등록">
+            <input type = "reset" value = "취소">
+            </td>
+        </tr>
+
+
+    </table>
+    </center>
+
+    
+</body>
+</html>
