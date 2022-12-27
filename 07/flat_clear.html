@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .items{ 
+            border: 3px solid black;
+            float: left;
+            margin: 5px;
+        }
+        .itemss img{
+         display: block;    /*div 블락 내에 img 를 넣을 경우 하단의 여백을 제거함*/
+        }
+        /*브라우저와 상관없이 3개씩만 출력하겠다.*/
+        #clear{
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+    <div class="items">
+        <img src="img/image1.jpg">
+    </div>
+    <div class="items">
+        <img src="img/image2.jpg">
+    </div>
+    <div class="items">
+        <img src="img/image3.jpg">
+    </div>
+    <div id="clear"></div>
+    <div class="items">
+        <img src="img/image4.jpg">
+    </div>
+    <div class="items">
+        <img src="img/image5.jpg">
+    </div>
+    <div class="items">
+        <img src="img/image6.jpg">
+    </div>
+</body>
+</html>
