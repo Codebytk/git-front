@@ -1,0 +1,102 @@
+body{
+    width: 1000px;
+    margin: 0 auto;
+    padding: 0;
+}
+ul{
+    list-style-type: none;
+}
+.a{float: right;}
+.b li{float: left;}
+#a{background-image: url(img12/main_menu_bg.png);
+    width: 758px;
+    height: 36px;
+    margin-top: 15px;
+    margin-left: 30px;
+    margin-bottom: 25px;
+}
+#a li{ font-size: 20px;
+    color: white;
+}
+#b{
+    margin-left: 54px;
+}
+#c{
+    text-decoration: none !important;
+    color: white !important;
+}
+.table1{
+    width: 200px;
+    background-color: rgb(234, 231, 231);
+    border-radius: 15px;
+    height: 130px;
+    margin-left: 25px;
+    margin-bottom: 15px;
+}
+#d{
+    font-size: 13px;
+}
+.flo{
+    float: left;
+}
+#online img{
+    width: 730px;
+    height: 250px;
+    float: right;
+    margin-right: 20px;
+}
+.visit tr{
+    margin-left: 15px;
+}
+.visit td{
+    font-size: 15px;
+}
+.visit table{
+    width: 200px;
+    background-color: rgb(234, 231, 231);
+    border-radius: 15px;
+    height: 130px;
+    margin-left: 25px;
+}
+.notice{
+    margin-left: 240px;
+   
+    width: 370px;
+    float: left;
+    margin-bottom: 0;
+}
+.notice td{
+    font-size: 14px;
+}
+.youtube{
+
+    margin-top: -20px;
+    height: 300px;
+    margin-right: 20px;            
+}
+.vid{
+    width: 350px;
+}
+.gallary{
+}
+.gallary{
+    border: 1px solid gray;
+    border-radius: 10px;
+    width: 730px;
+    height: 260px;
+    margin-top: 30px;
+    margin-left: 240px;
+    
+}
+.gallary li{
+    display: inline-block;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.foot{
+    display: inline;
+}
+.foot li{
+    font-size: 13px;
+    margin-left: 230px;
+}

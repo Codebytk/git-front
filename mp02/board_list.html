@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         body{
+            width: 1000px;
+            margin: 0 auto;
+            padding: 0;
+        }
+        ul{
+            list-style-type: none;
+        }
+        .a{float: right;}
+        .b li{float: left;}
+        #a{background-image: url(img12/main_menu_bg.png);
+            width: 758px;
+            height: 36px;
+            margin-top: 15px;
+            margin-left: 30px;
+            margin-bottom: 25px;
+        }
+        #a li{ font-size: 20px;
+            color: white;
+        }
+        .flo{
+            float: left;
+        }
+        #b{
+            margin-left: 54px;
+        }
+        #c{
+            text-decoration: none !important;
+            color: white !important;
+        }
+        .table1{
+            width: 200px;
+            background-color: rgb(234, 231, 231);
+            border-radius: 15px;
+            height: 130px;
+            margin-left: 25px;
+            margin-bottom: 15px;
+        }
+        #d{
+            font-size: 13px;
+        }
+        #online img{
+            width: 730px;
+            height: 250px;
+            float: right;
+            margin-right: 20px;
+        }
+        .community{margin-left: 30px;
+        float: left;}
+        .community table{
+            background-image: url(img12/sub_menu_bg.png);
+            width: 184px;
+            height: 320px;
+        }
+        .community ul{
+            width: 123px;
+        }
+        .community li{
+            margin-left: -30px;
+        }
+        .community #side{
+            border: 1px solid gray;
+            width: 150px;
+            border-radius: 15px;
+        }
+        .freetalk{
+            margin-left: 250px;
+            height: 30px;
+        }
+        .freetalk table{
+            width:700px;
+        }
+        footer{
+            width: 100%;
+        }
+        .foot{
+            display: inline;
+            float: right;
+        }
+        .foot li{
+            font-size: 13px;
+            margin-left: 230px;
+        }
+        
+    </style>
+</head>
+<body>
+    <header>
+        <a class="a">HOME|LOGIN|JOIN|NOTICE</a>
+        <ul class="b">
+            <li><img src="img12/logo.png"></li>
+            <li id="a">
+                <ul>
+                    <li id="c"><a href=board_list.html>자유개시판</a></li>
+                    <li id="b">기타 연주</li>
+                    <li id="b">공동 구매</li>
+                    <li id="b">연주회 안내</li>
+                    <li id="b">회원 개시판</li>
+                </ul>
+            </li>
+        </ul>
+    </header>
+    <aside>
+        <div class="flo">
+       <table class="table1">
+            <tr><td align="center"><img src="img12/ttl_login.png"></td></tr>
+            <tr><td align="center"><input type="text" size="14px"><br><input type="password"size="14px"></td><td><img src="img12/btn_login.gif"></td></tr>
+            <tr><td colspan="2" id="d" align="center">회원가입 <a style="color: gray;">| 아이디/비밀번호 찾기<a></td></tr>
+        </ul>
+       </table>
+        </div>
+        <div id="online">
+       <a><img src="img12/comm.gif"></a>
+        </div>
+        <div class="community">
+            <table>
+                <tr><td>
+                    <ul><li>+자유게시판</li><li>+방명록</li><li>+공지사항</li><li>+등업요청</li><li>+포토겔러리</li></ul>
+                </td></tr>
+            </table>
+            <ul id="side">
+                <li><img src="img12/banner1.png"></li>
+                <li><img src="img12/banner2.png"></li>
+                <li><img src="img12/banner3.png"></li>
+            </ul>
+        </div>
+    </aside>
+    <main>
+        <div class="freetalk">
+            <table>
+                <tr><td><h3>자유게시판</h3></td></tr>
+                <tr><td colspan="5"><hr></td></tr>
+                <tr><td><h5>▷ 총 5개의 개시물이 있습니다</h5></td><td><img src="img12/select_search.gif">
+                <select>
+                    <option value="제목">제목</option>
+                    <option value="글쓴이">글쓴이</option>
+                </select></td><td><input type="text"></td><td><img src="img12/search_button.gif"></td></tr>
+            </table>
+            <table>
+                <tr style="background-color: rgb(218, 216, 216); text-align: center;"><td>번호</td><td>제목</td><td>글쓴이</td><td>일시</td><td>조회수</td></tr>
+                <tr><td>1</td><td><a href="board_view.html">까스릉 님의 선물인 보드카가 정말 독하네요!!!</a></td><td>루바토</td><td>2017-09-20</td><td>15</td></tr>
+                <tr><td>2</td><td><a href="board_view.html">까스릉 님의 선물인 보드카가 정말 독하네요!!!</a></td><td>루바토</td><td>2017-09-20</td><td>15</td></tr>
+                <tr><td>3</td><td><a href="board_view.html">까스릉 님의 선물인 보드카가 정말 독하네요!!!</a></td><td>루바토</td><td>2017-09-20</td><td>15</td></tr>
+                <tr style="text-align: center; align-items: center;"><td colspan="3">◀ 이전 1 다음▶</td><td colspan="2"><img src="img12/list.png"><a href="board_write.html"><img src="img12/write.png"></a></td></tr>
+            </table>
+        </div>
+    </main>
+    <footer>
+        <ul class="foot">
+            <hr>
+            <li>
+                <img src="img12/logo_footer.gif">
+            </li>
+            <li>
+                <ul style="margin-top: -60px; margin-right: 200px;">
+                    <li>
+                    서울시 강남수 삼성동 1234 우 : 123-1234
+                    </li>
+                    <li>TEL : 031-123-1234 Enamil: email@domain.com</li>
+                    <li>COPYRIGHT (C) 루바토 ALL RIGHTS RESERVED</li>    
+                </ul>
+            </li>
+            <li style="float: right; margin-top: -80px;">
+                <img src="img12/blog.gif">
+                <img src="img12/facebook.gif">
+                <img src="img12/twitter.gif">
+            </li>
+        </ul>
+    </footer>
+</body>
+</html>
