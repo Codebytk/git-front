@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var car=newObject();
+        car.name='Sonata';
+        car.speed=100;car.color='blue';
+        car.speedup=function() {
+            return this.speed+10;
+        };
+        var cname=document.getElementById("carname");
+        cname.textContent='자동차이름: '+ car.name;
+        var colname=document.getElementById("carcolor");
+        colname.textContent='자동차색상: '+ car.color;
+        varcspeed=document.getElementById("carspeed");
+        cspeed.textContent='자동차속도: '+ car.speedup();
+    </script>
+</body>
+</html>

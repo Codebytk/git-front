@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0 auto; padding: 0;}
+        body{
+            width: 600px;
+        }
+        ul{
+            list-style-type: none;
+        }
+        #a{
+            margin-top: 20px;
+        }
+        #b{
+            display: inline;
+            width: 290px;
+            height: 250px;
+        }
+        #b img{width: 290px; float: left; height: 240px;
+        }
+        #b a{
+            width: 100px;
+        }
+        .c{
+            margin-left: 350px;
+        }
+        .c li{
+            margin-top: 8px;
+        }
+        .d{
+            width: 100%; 
+            float: left;
+            margin-left: 20px; 
+            margin-top: 30px;
+        }
+        .d img{
+            width: 70px;
+            float: left;
+            margin-left: 10px;
+        }
+        .d a{
+            margin-left: 80px;
+        }
+       .maindiv{
+            position: relative;
+        }
+    </style>
+</head>
+<body>
+    <div class="name">
+        <h1>에티오피아 게뎁</h1>
+    </div>
+    <div class="maindiv">
+        <div style="position: absolute; border: 2px dashed white; width: 275px; height: 225px; margin: 5px;"></div>
+        <ul id="a">
+            <li id="b">
+                <a><img src="images/coffee-pink.jpg" alt="" id="mainpic"></a>
+            </li>
+            <li class="c">
+                <ul>
+                    <li>
+                        상품명 : 에디오피아 게뎁
+                    </li>
+                    <li style="color: blue;">
+                        판매가 : 9,000
+                    </li>
+                    <li>
+                        배송비 : 3,000
+                    </li>
+                    <li>
+                        (50,000원 이상 구매시 무료)
+                    </li>
+                    <li>
+                        적립금 : 180원(2%)
+                    </li>
+                    <li>
+                        로스팅 : 2019.06.17
+                    </li>
+                    <li>
+                        <button style="width: 230px; margin-top: 20px; height: 40px;">장바구니 담기</button>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div class="d">
+        <ul>
+            <li><img src="images/coffee-pink.jpg" data-src="images/coffee-pink.jpg" class="pic"></li>
+            <li><img src="images/coffee-blue.jpg" data-src="images/coffee-blue.jpg" class="pic"></li>
+            <li><img src="images/coffee-gray.jpg" data-src="images/coffee-gray.jpg" class="pic"></li>
+            <li><a style="color:blue">상세 설명보기</a></li>
+        </ul>
+    </div>
+    <script>
+        /* querySelector () : css - id : #,class: .
+        getElementById();   :태그 내부에 적용된 id
+        getElementByClassName();    : 태그 내부에 적용된 class
+
+        엘리멘트리(테그)의 속성값을 변경할때 : 객체.setAttribute 를 사용함 . id 속성에만 적용되어 있다.
+            class 속성에는 setAttribute
+        */
+        var coffee = document.getElementsByClassName("pic");
+        var main = document.getElementById("b");
+        var mainpic = document.getElementById("mainpic");
+        for(var i = 0; i<coffee.length; i++){
+            coffee[i].addEventListener("click" , showbox);
+        }
+        function showbox(){
+            var bigLocation = this.getAttribute("data-src");
+            mainpic.setAttribute("src" , bigLocation);
+        }
+        
+    </script>
+    
+
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var int1=1;
+        var int2=5;
+        var r1=r2=0;
+        r1=15%6;
+        document.write("15%6 ="+r1+"<br>");
+        document.write("int1++ ="+int1++ +"<br>");
+        document.write("++int1 ="+ ++int1 +"<br>");
+        document.write("int2-- ="+ int2-- +"<br>");
+        document.write("--int2 ="+ --int2 +"<br>");
+        document.write("int1*int2 ="+ int2*int1 +"<br>");
+    </script>
+</head>
+<body>
+    <script>
+        var x=5;
+        var y="5";
+        var result;
+        result=(x>y);
+        document.write("x>y : "+result+"<br>");
+        result=(x==y);
+        document.write("x==y : "+result+"<br>");
+        result=(x===y);
+        document.write("x===y : "+result+"<br>");
+        result=(x!=y);
+        document.write("x!=y : "+result+"<br>");
+        result=(x!==y);
+        document.write("x !== y : "+result+"<br>");
+    </script>
+    <script>
+        var x=5;
+        var y=7;
+        result=(x<10 && y>10);   
+        document.write("(x<10 && y>10) : "+ result + "<br>")
+        ;result=(x<10 || y>10);
+        document.write("(x<10 || y>10) : "+ result + "<br>");
+        result=!(x<10 && y>10);
+        document.write("!(x<10 && y>10) : "+ result + "<br>");
+    </script>
+    <script>
+        var gander="M";
+        var age=21;
+        if(gender=="M"){
+            if(age>=19){
+                result="남자 성인입니다."
+            }else{
+                result="남자 미성년자 입니다."
+            }
+        }else{
+            if(age>=19){
+                result="여자 성인입니다."
+            }else{
+                result="여자 미성년자 입니다."
+            }
+        }
+    </script>
+    
+</body>
+</html>

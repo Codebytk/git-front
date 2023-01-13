@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            margin: 0 auto;
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <img src="images/easys-1.jpg" id="img" onmouseover="Changeimg()" onmouseout="Changeimg1()">
+    </div>
+    <script>
+        var cimg=document.getElementById("img");
+        function Changeimg(){
+            cimg.setAttribute('src','images/easys-2.jpg');
+        }
+        function Changeimg1(){
+            cimg.setAttribute('src','images/easys-1.jpg');
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //insert 함수 :배역의 각방에 1~ 100 자동으로 출력
+        var arrdata =[];
+
+        function insertArr(){
+            for ( var i=0; i<100; i++){
+                arrdata[i]=i+1;
+                document.write(arrdata[i]+" ");
+            }
+                document.write("</p><a href = '#' onclick='deleteArr()'>홀수번째 데이터 초기화</a>")
+            }
+        function deleteArr(){
+            for(var i =0; i<arrdata.length; i++){
+                if(i % 2 == 0){
+                    arrdata[i] = 0;
+                }
+                continue;
+            }
+            selectArr();
+        }
+        function selectArr(){
+            for(var i =0; i<arrdata.length; i++){
+                document.write(arrdata[i]+" ");
+            }
+            document.write("<p/> 홀수번째 데이처터 초기화 dhks료<p/>");
+            document.write("<a href='22.arr.html'> 되돌아가기</a>");
+        }
+    </script>
+    <button type="button" onclick="insertArr()">배열의 기본내용 출력</button>
+    <button type="button"onclick="deleteArr()">홀수번째 데이터 출력</button>
+</body>
+</html>

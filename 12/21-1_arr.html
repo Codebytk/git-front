@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var arrdata=[];
+        function insertArr(){
+            for(var i=0; i<430;){
+                for(var j=1; j<=1000; j++){
+                    if(j%3==0||j%7==0){
+                        arrdata[i]=j;
+                        document.write(arrdata[i]+" ")
+                        i++;
+                    }
+                }
+            }
+            return arr;
+        }
+        insertArr();
+
+        function selectArr(){
+            
+        }
+        function addArr(){
+            var sum=0;
+            for(var i=0; i<1000; i++){
+                if(i%7==0){
+                    sum+=i; 
+                }
+            }
+            return sum;
+        }
+        var addr=addArr();
+        document.write("7의 배수의 합"+addr);
+
+    </script>
+    
+</body>
+</html>
